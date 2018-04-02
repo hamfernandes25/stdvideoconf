@@ -14,7 +14,7 @@ var path = require('path');
   var roomuser = require('./routes/index')
  var http = require('http')
 var routes = require('./routes')
-var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 1337
+var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 80
 var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || 'localhost'
 var socketIoServer = '127.0.0.1';
 var userid;
@@ -117,7 +117,7 @@ app.post('/user/getname/:id',user.getname);
 
 
 var server=app.listen(serverPort, serverIpAddress, function(){
-    console.log("Express is running on port "+serverPort);
+    console.log("Express is running on port "+serverIpAddress+":"+serverPort);
 });
 
 var io = require('socket.io').listen(server);
