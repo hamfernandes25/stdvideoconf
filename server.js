@@ -31,11 +31,12 @@ var app = express();
 var mysql      = require('mysql');
 var bodyParser=require("body-parser");
 var connection = mysql.createConnection({
-              host     : 'localhost',
-              user     : 'root',
-              password : '',
-              database : 'test'
+              host     : 'mysql.hostinger.in',
+              user     : 'u741017473_tel',
+              password : 'beproject2016',
+              database : 'u741017473_telgc'
             });
+
  
 connection.connect();
  
