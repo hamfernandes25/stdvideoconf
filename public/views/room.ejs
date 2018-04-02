@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name='description' content='WebRTC Reference App' />
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'>
+		<script>var HOST_ADDRESS='<%= hostAddress %>';</script>  
+<script>var USER_ID='<%= userId %>';</script> 
+<script>var CHECK_ID='<%= check %>';</script> 
+<script>var NAME='<%= name %>';</script>
+		<script src='/socket.io/socket.io.js'></script>
+		<script src='/js/lib/adapter.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>		
+		<script src='/js/meeting.js'></script>
+		<script src='/js/room.js'></script>
+		<link rel="stylesheet" type="text/css" href="/css/room.css" media="screen" />
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+		<title>Video Conference</title>
+
+<script type = "text/javascript" >
+
+
+</script>
+
+
+     <script language="javascript" type="text/javascript">
+      //this code disables F5/Ctrl+F5/Ctrl+R in Chrome, Firefox and Explorer
+      document.onkeydown = disableF5
+      function disableF5(e) { if ((e.which || e.keyCode) == 116 || ((e.which || e.keyCode) == 82 && e.ctrlKey)) e.preventDefault(); };
+      $(document).on("keydown", disableF5);
+
+
+
+  </script>
+
+	</head>
+
+	<body >
+		
+          <div class="col-md-12  " >
+   
+        <div class="row ">     
+            <div class="col-md-12 abpanel" style="background-color:white;">hh</div>
+            
+        </div>
+        <div class="row"> 
+          <div class="col-md-2 panel1" >hi</div>
+        <div  class="col-md-8 panel2"></br>
+            <div class="row"> <div class=" col-md-12 profborder">  <div class="profvideopane col-md-12 "></div></div></div><hr>
+           <div class="row"> <div class=" col-md-12 studborder">  <div class="studvideopane  "></div></div></div>
+        </div>
+        <div  class="col-md-2 panel3"></br>
+  <div class=" center localborder " >
+      <div class="localvideowrap">
+	<video class=" col-md-12 localvideo " id="localVideo" autoplay></video><p >(You)</p>
+	  </div> 
+  </div>
+<!--<div>
+<input type="button" name="nconnect" id="connect" value="CONNECT"/></br>
+<input type="button" name="ndisconnect" id="disconnect" value="DISCONNECT"/>
+</div>-->
+        </div> 
+        </div>
+</div>
+   
+   
+    
+	</body>
+
+</html>
