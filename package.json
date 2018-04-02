@@ -1,5 +1,5 @@
 {
-  "name": "foobubble",
+  "name": "stdvideoconf",
   "version": "0.0.1",
   "description": "webrtc description",
   "main": "server.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucaslouca/"
+    "url": "https://github.com/hamfernandes25/"
   },
   "keywords": [
     "webrtc",
     "videochat"
   ],
-  "author": "lucaslouca",
+  "author": "hamfernandes25",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.16.1",
