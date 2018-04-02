@@ -31,10 +31,10 @@ var app = express();
 var mysql      = require('mysql');
 var bodyParser=require("body-parser");
 var connection = mysql.createConnection({
-              host     : 'mysql.hostinger.in',
-              user     : 'u741017473_tel',
-              password : 'beproject2016',
-              database : 'u741017473_telgc'
+              host     :'sql2.freesqldatabase.com',
+              user     : 'sql2230230',
+              password : 'rF6!hR6%',
+              database : 'sql2230230'
             });
 
  
