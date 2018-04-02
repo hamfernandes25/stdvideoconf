@@ -15,8 +15,8 @@ var path = require('path');
  var http = require('http')
 var routes = require('./routes')
 var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 80
-var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || 'telvideoconf.herokuapp.com'
-var socketIoServer = '54.75.254.120';
+var serverIpAddress ='telvideoconf.herokuapp.com'
+var socketIoServer = serverIpAddress;
 var userid;
 var prof;
 var check;
