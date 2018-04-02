@@ -16,7 +16,7 @@ var path = require('path');
 var routes = require('./routes')
 var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 80
 var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || 'localhost'
-var socketIoServer = '127.0.0.1';
+var socketIoServer = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 var userid;
 var prof;
 var check;
