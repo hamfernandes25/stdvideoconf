@@ -15,8 +15,8 @@ var path = require('path');
  var http = require('http')
 var routes = require('./routes')
 var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 80
-var serverIpAddress ='telvideoconf.herokuapp.com'
-var socketIoServer = serverIpAddress;
+//var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP ||'192.168.43.234'
+//var socketIoServer = '127.0.0.1';
 var userid;
 var prof;
 var check;
@@ -95,7 +95,7 @@ app.post('/user/getname/:id',user.getname);
             req.session.rname=roomname;
             console.log("room name"+roomname);
              
-            res.render('room', {"hostAddress":socketIoServer,"userId":userid,"check":prof,"name":uname});  
+            res.render('room', {"hostAddress":server,"userId":userid,"check":prof,"name":uname});  
           
                }else{
               res.render('landing.ejs',{message:"Room "+path+" not created by your professor/lecturer"});
@@ -116,8 +116,8 @@ app.post('/user/getname/:id',user.getname);
 
 
 
-var server=app.listen(serverPort, serverIpAddress, function(){
-    console.log("Express is running on port "+serverIpAddress+":"+serverPort);
+var server=app.listen(serverPort,function(){
+    console.log("Express is running on port "+serverPort);
 });
 
 var io = require('socket.io').listen(server);
