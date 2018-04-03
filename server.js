@@ -14,7 +14,7 @@ var path = require('path');
   var roomuser = require('./routes/index')
  var http = require('http')
 var routes = require('./routes')
-var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 80
+var serverPort = process.env.PORT || 1337
 //var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP ||'192.168.43.234'
 //var socketIoServer = '127.0.0.1';
 var userid;
