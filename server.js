@@ -38,9 +38,9 @@ var connection = mysql.createConnection({
             });
 
  
-connection.connect();
+//connection.connect();
  
-global.db = connection;
+//global.db = connection;
 
  
 // Static content (css, js, .png, etc) is placed in /public
