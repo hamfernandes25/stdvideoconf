@@ -23,7 +23,7 @@
     "express-session": "^1.15.1",
     "mysql": "^2.13.0",
     "node-static": "~0.7.1",
-    "open": "0.0.5",
+    "open": "7.0.0",
     "req-flash": "0.0.3",
     "socket.io": "~0.9.16"
   }
